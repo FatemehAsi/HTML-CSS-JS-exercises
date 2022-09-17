@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  min-height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    #FFF9B6,
+    #FF9292
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  height: 190px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 450px;
+}
+
+.profile-card {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.profile-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card:hover .profile-card {
+  height: 250px;
+  width: 250px;
+}
+
+.content {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.details-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: #555;
+}
+
+.details-card h2 span {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.data-card {
+  display: flex;
+  display: none;
+}
+
+.data-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #555;
+  text-align: center;
+  margin: 8px 16px;
+}
+
+.data-card h3 span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.buttons-card {
+    transition: 0.5s;
+
+    display: flex;
+    gap: 8px;
+    display: none;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+
+  display: inline-block;
+}
+
+.btn-follow {
+  border: 2px solid #FF9292;
+  background-color: #FF9292;
+  color: #fff;
+}
+.btn-message {
+  border: 2px solid #bbb;
+  background-color: transparent;
+  color: #bbb;
+}
+
+.card:hover .content{
+    position: absolute;
+    top: 55%;
+    left: 16%;
+}
+
+.card:hover .data-card
+{
+    display:  flex;
+}
+
+.card:hover .buttons-card{
+    display: block;
+}
+
