@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    color:#fff;
+}
+
+.background{
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(assets/images/pexels-pixabay-271795.jpg) center/cover;
+    position:fixed;
+    z-index: -1;
+}
+
+/* HEADER */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    /* display: inline; */
+    align-self: center;
+    margin: 24px;
+}
+
+.logo img{
+    width:180px;
+    height:50px;
+}
+
+.navbar{
+    align-self: center;  
+    margin: 24px;
+}
+
+.navbar ul{
+    display: flex;
+    gap:32px
+}
+.navbar ul li{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar-list a:link,
+.navbar-list a:visited{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.navbar-list a:hover,
+.navbar-list a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+  }
+
+/* MAIN */
+.main-content{
+    margin: 200px auto;
+    width: 600px;
+    line-height: 1.7;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.description{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* BUTTONS */
+.buttons{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn{
+    background-color: transparent;
+    border:3px solid #009688;
+    border-radius:40px;
+    width: 200px;
+    height:50px; 
+    padding: 12px 0;
+    margin: 10px 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn span{
+    height: 100%;
+    width: 0;
+    background-color: #009688;
+    border-radius: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover span{
+    width: 100%;
+}
+
+.btn:hover{
+    border: none;
+}
+
