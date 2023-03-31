@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product-img {
+  /* float: left; */
+  margin-right: 40px;
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(226, 222, 222);
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* PRODUCT INFORMATION */
+
+.product-info {
+  /* (825 - 8 - 250 - 80) / 2 = 243px for product-info and product-details */
+  /* 825 -> container , 4 -> border da do taraf mishe 8px , 250px -> for img , 40px ham bein do ta bakhsh mishe 80px */
+  width: 243px;
+  /* float: left; */
+  margin-right: 40px;
+  margin-top: 20px;
+
+}
+
+.price {
+  font-size: 24px;
+  /* float: left; */
+}
+
+.shipping {
+  font-size: 12px;
+  font-weight: bold;
+  color: #777;
+  text-transform: uppercase;
+  /* margin-bottom: 20px; */
+  /* float: right; */
+}
+
+.sale {
+  color: #fff;
+  background-color: #ec2f2f;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+  /* clear: both; */
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+  /* display:inline-block;
+    margin-bottom: 20px; */
+}
+
+.color {
+  display: inline-block;
+  background-color: black;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  width: 243px;
+  /* float: left; */
+  margin-top: 20px;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.add-cart {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-top: 6px solid black;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+  /* 100% of the parent(here the parent element is article and the width is 825px and 100% of this width ) */
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+  display: inline-block;
+}
+
+
+/* FLEX BOX */
+.price-shipping{
+  display: flex;
+  align-items: center;
+  gap:70px;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.two-items{
+  display: flex;
+}
