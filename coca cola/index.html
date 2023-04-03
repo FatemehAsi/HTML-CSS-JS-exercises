@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Coca Cola</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <img src="assets/images/logo.png" alt="Coca Cola logo" class="logo">
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <div class="circle"></div>
+            <div class="hero container">
+
+                <div class="hero-text">
+                    <h1 class="heading-primary">Taste the Feeling</h1>
+                    <p class="hero-description">Coca-Cola, or Coke, is a carbonated soft drink manufactured by<br> the Coca-Cola Company. Originally marketed as a temperance<br> drink and intended as a patent medicine, it was invented in the<br>late 19th century by John Stith Pemberton in Atlanta Georgia.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+
+                <div class="img-box">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/cocacola1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/cocacola2.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/cocacola3.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/cocacola4.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/cocacola5.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/cocacola6.png" />
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div class="social-media">
+                <ul class="social-media-list">
+                    <li><a href="#"><img src="assets/images/facebook.png" alt="facebook logo" class="social-logo"></a>
+                    </li>
+                    <li><a href="#"><img src="assets/images/twitter.png" alt="twitter logo" class="social-logo"></a>
+                    </li>
+                    <li><a href="#"><img src="assets/images/instagram.png" alt="instagram logo" class="social-logo"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop:true,
+        });
+    </script>
+</body>
+
+</html>
